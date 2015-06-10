@@ -68,6 +68,12 @@ table {
 body {
 	width: 100%;
 }
+
+
+
+
+
+/*tooggle menu hide*/
 .toggle-menu {
   width: 100%;
   height: 100%;
@@ -90,7 +96,6 @@ body {
   opacity: 1;
 }
 
-
 .toggle-op {
   opacity: 0.25;
   width: 100%;
@@ -99,22 +104,16 @@ body {
 
 
 
-
-
-
-
-
-
-
+/*banner whith photo*/
 
 
 
 .main-foto {
   width: 100%;
-  height: 100%;
-  /*outline: 1px solid green;*/
-  background: url(../image/background.png) no-repeat;
-  background-size: 100%;
+  /*height: 800px;*/
+  background: url(../image/background.png) no-repeat center;
+  background-size: 100% 100%;
+  background-position: 50% 50% ;
 
 }
 .main-foto img {
@@ -123,13 +122,10 @@ body {
 	position: relative;
 	display: block;
 }
-
-
-
 .logo-1 {
 	padding-top: 22%;
 	width: 100%;
-	text-align: center;
+	text-align: center
 }
 
 .logo-1 span {
@@ -158,7 +154,13 @@ body {
 }
 .train img {
 	height: auto;
+  display: block;
 }
+
+/*all buttons*/
+
+
+
 .button-arrow {
 	width: 100%;
 	text-align: center;
@@ -274,6 +276,9 @@ a.button-search:before {
   transform: rotate(0deg);
 }
 
+
+/*about me*/
+
 .inner-left {
 	width: 44%;
 	margin: 0 auto;
@@ -299,6 +304,9 @@ a.button-search:before {
 	margin-top: -80px;
 
 }
+
+
+/*image gallery*/
 
 .gallery {
   width: 100%;
@@ -372,12 +380,15 @@ a.button-search:before {
   height: 355px;
 }
 
+
+
+/*statistic section*/
+
 .bottom-row div, .top-row div {
   display: inline-block;
   /*outline: 1px solid black;*/
   width: 32%;
 }
-
 
 .top-row {
   margin-top: 100px;
@@ -416,15 +427,15 @@ a.button-search:before {
 }
 
 
+/*FOOTER*/
+
+
 .footer {
   width: 100%;
   height: 380px;
   background: url(../image/footer_giraffe.png) no-repeat;
   background-position: left;
 }
-
-
-
 .message-for-me {
   width: 50%;
   margin: 0 auto;
@@ -513,5 +524,130 @@ a.button-search:before {
   color: #e37a6a;
   font-size: 20px;
   font-weight: 600;
-  padding-right: 30px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1382px) {
+  
+
+ 
+}
+
+@media only screen and (max-width: 992px) {
+  .logo-1 {
+    padding-top: 22%;
+    width: 100%;
+    text-align: center
+  }
+
+  .logo-1 span {
+    color: white;
+    font-size: 55px;
+    letter-spacing: 8px;
+    font-family:'streamsterregular';
+    margin-left: -400px;
+  }
+
+  .logo-2 {
+    text-align: center;
+  }
+  .logo-2 span {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-family: arial;
+  }
+  .button-arrow {
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+  }
+ 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+   .logo-1 {
+    padding-top: 22%;
+    width: 100%;
+    text-align: center
+  }
+
+  .logo-1 span {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 6px;
+    font-family:'streamsterregular';
+    margin-left: -265px;
+  }
+
+  .logo-2 {
+    text-align: center;
+  }
+  .logo-2 span {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: arial;
+  }
+  .train img {
+    height: auto;
+    display: none;
+  }
+  .button-arrow {
+    width: 100%;
+    text-align: center;
+    padding-top: 75px;
+  } 
+}
+
+
+@media only screen and (max-width: 480px) {
+    .logo-1 {
+    padding-top: 22%;
+    width: 100%;
+    text-align: center
+  }
+
+  .logo-1 span {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-family:'streamsterregular';
+    margin-left: -200px;
+  }
+
+  .logo-2 {
+    text-align: center;
+  }
+  .logo-2 span {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: arial;
+  }
+  
+  .train {
+    width: 65%;
+    height: 60px;
+    margin: 0 auto;  
+  }
+  .train img {
+    height: auto;
+    display: none;
+  }
+  .button-arrow {
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
 }
