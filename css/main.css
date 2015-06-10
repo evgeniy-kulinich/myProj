@@ -299,103 +299,78 @@ a.button-search:before {
 	margin-top: -80px;
 
 }
-.gallery img {
-  display: block;
+
+.gallery {
+  width: 100%;
+
 }
 .row {
-	width: 90%;
-	/*outline: 1px solid black;*/
-	height: 495px;
-  margin-left: 45px;
+  height: 495px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 25px;
 }
+
 .row div {
   display: inline-block;
 }
 
-
-.row-1 {
-  width: 90%;
-  /*outline: 1px solid black;*/
-  height: 355px;
-  margin-left: 45px;
-  margin-top: 25px;
-}
-
-.row-1 div {
-    display: inline-block;
+.row img {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 .item-1 {
   width: 345px;
+  height: 235px;
+  margin-right: 25px;
+}
 
-  margin-right: 28px;
-  /*outline: 1px solid black;*/
-}
-.item-1 img {
-  width: 100%;
-  height: 100%;
-}
 .class-1 {
   width: 345px;
   height: 235px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .class-2 {
   width: 345px;
   height: 235px;
 }
+
 .item-2 {
-  /*width: 29%;*/
   width: 340px;
   height: 495px;
-  /*outline: 1px solid black;*/
+  margin-right: 25px;
 }
-.item-2 img {
-  width: 100%;
-  height: 100%;
-}
-
 .item-3 {
-  /*width: 38%;*/
-  float: right;
-  width: 465px;
+  width: 460px;
   height: 495px;
 }
-.item-3 img {
-  width: 100%;
-  height: 100%;
+
+.row-1 {
+  height: 355px;
+  margin: 0 auto;
+  text-align: center;
+}
+.row-1 div {
+  display: inline-block;
 }
 
 .item-4 {
   width: 345px;
   height: 355px;
-  /*outline: 1px solid black;*/
-  margin-right: 28px;
-}
-.item-4 img {
-  width: 100%;
-  height: 100%;
+  margin-right: 25px;
 }
 
 .item-5 {
-  width: 340px;
+  width: 345px;
   height: 355px;
-  /*outline: 1px solid black;*/
-}
-.item-5 img {
-  width: 100%;
-  height: 100%;
+  margin-right: 24px;
 }
 
 .item-6 {
-  width: 465px;
+  width: 460px;
   height: 355px;
-  float: right;
 }
-.item-6 img {
-  width: 100%;
-  height: 100%;
-}
-
 
 .bottom-row div, .top-row div {
   display: inline-block;
@@ -454,11 +429,26 @@ a.button-search:before {
   width: 50%;
   margin: 0 auto;
 }
+.message-for-me hr {
+  width: 220px;
+  display: block;
+  margin: 0 auto;
 
-.message-for-me img {
+}
+
+.message-for-me .letter {
   display: block;
   text-align: center;
   margin: 0 auto;
+  padding-right: 300px;
+}
+.message-for-me p {
+  text-transform: uppercase;
+  font-family: arial;
+  text-align: center;
+  color: #c0b6b6;
+  font-size: 12px;
+  margin-bottom: -15px;
 }
 .footer-nav {
   width: 50%;
@@ -481,6 +471,7 @@ a.button-search:before {
   color: #674a4a;
   font-family: arial;
   letter-spacing: 4px;
+  font-size: 19px;
 
 }
 
@@ -514,6 +505,13 @@ a.button-search:before {
   padding-top: 65px;
 }
 
-.social-net img:last-child {
+.social-net a:last-child {
     margin-right: 60px;
+}
+
+.to-top {
+  color: #e37a6a;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 30px;
 }
