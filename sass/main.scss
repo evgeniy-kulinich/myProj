@@ -2,85 +2,27 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
 
-/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+@import "compass/reset";
 
 @font-face {
-  font-family: 'streamsterregular';
-  src: url("streamster-webfont.eot");
-  src: url("streamster-webfont.eot?#iefix") format("embedded-opentype"), url("streamster-webfont.woff2") format("woff2"), url("streamster-webfont.woff") format("woff"), url("streamster-webfont.ttf") format("truetype"), url("streamster-webfont.svg#streamsterregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 20, ../sass/main.scss */
-body {
-  width: 100%;
+    font-family: 'streamsterregular';
+    src: url('streamster-webfont.eot');
+    src: url('streamster-webfont.eot?#iefix') format('embedded-opentype'),
+         url('streamster-webfont.woff2') format('woff2'),
+         url('streamster-webfont.woff') format('woff'),
+         url('streamster-webfont.ttf') format('truetype'),
+         url('streamster-webfont.svg#streamsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
+body {
+	width: 100%;
+}
+
+
 /*tooggle menu hide*/
-/* line 26, ../sass/main.scss */
 .toggle-menu {
   width: 100%;
   height: 100%;
@@ -90,15 +32,12 @@ body {
   background-color: black;
 }
 
-/* line 35, ../sass/main.scss */
 .toggle-menu li {
   font-family: arial;
   font-size: 25px;
   margin-bottom: 95px;
   text-align: center;
 }
-
-/* line 41, ../sass/main.scss */
 .toggle-menu li a {
   text-decoration: none;
   color: white;
@@ -106,83 +45,76 @@ body {
   opacity: 1;
 }
 
-/* line 48, ../sass/main.scss */
 .toggle-op {
   opacity: 0.25;
   width: 100%;
   height: 100%;
 }
 
+
+
 /*banner whith photo*/
-/* line 60, ../sass/main.scss */
+
+
+
 .main-foto {
   width: 100%;
   /*height: 800px;*/
   background: url(../image/background.png) no-repeat center;
   background-size: 100% 100%;
-  background-position: 50% 50%;
+  background-position: 50% 50% ;
 }
-
-/* line 67, ../sass/main.scss */
 .main-foto img {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
 }
-
-/* line 73, ../sass/main.scss */
 .logo-1 {
-  padding-top: 22%;
-  width: 100%;
-  text-align: center;
+	padding-top: 22%;
+	width: 100%;
+	text-align: center
 }
 
-/* line 79, ../sass/main.scss */
 .logo-1 span {
-  color: white;
-  font-size: 75px;
-  letter-spacing: 10px;
-  font-family: 'streamsterregular';
-  margin-left: -570px;
+	color: white;
+	font-size: 75px;
+	letter-spacing: 10px;
+	font-family:'streamsterregular';
+	margin-left: -570px;
 }
 
-/* line 87, ../sass/main.scss */
 .logo-2 {
-  text-align: center;
+	text-align: center;
 }
-
-/* line 90, ../sass/main.scss */
 .logo-2 span {
-  color: white;
-  font-size: 80px;
-  text-transform: uppercase;
-  letter-spacing: 17px;
-  font-family: arial;
-}
+	color: white;
+	font-size: 80px;
+	text-transform: uppercase;
+	letter-spacing: 17px;
+	font-family: arial;
 
-/* line 98, ../sass/main.scss */
+}
 .train {
-  width: 65%;
-  height: 60px;
-  margin: 0 auto;
+	width: 65%;
+	height: 60px;
+	margin: 0 auto;  
 }
-
-/* line 103, ../sass/main.scss */
 .train img {
-  height: auto;
+	height: auto;
   display: block;
 }
 
 /*all buttons*/
-/* line 112, ../sass/main.scss */
+
+
+
 .button-arrow {
-  width: 100%;
-  text-align: center;
-  padding-top: 200px;
+	width: 100%;
+	text-align: center;
+	padding-top: 200px;
 }
 
-/* line 118, ../sass/main.scss */
 a.button-down {
   position: relative;
   z-index: 1;
@@ -192,10 +124,8 @@ a.button-down {
   border-radius: 100%;
   outline: none;
   background: white;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
 }
-
-/* line 129, ../sass/main.scss */
 a.button-down:after, a.button-down:before {
   content: "";
   position: absolute;
@@ -208,19 +138,18 @@ a.button-down:after, a.button-down:before {
   height: 10%;
   margin: auto;
   background: #e78f81;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* line 145, ../sass/main.scss */
 a.button-down:before {
   left: 15%;
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
 }
 
-/* line 153, ../sass/main.scss */
+
+
 a.button-menu {
   position: relative;
   z-index: 1;
@@ -230,12 +159,10 @@ a.button-menu {
   border-radius: 100%;
   outline: none;
   background: white;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
   margin-left: 25px;
   margin-top: 25px;
 }
-
-/* line 166, ../sass/main.scss */
 a.button-menu:after, a.button-menu:before {
   content: "";
   position: absolute;
@@ -248,19 +175,19 @@ a.button-menu:after, a.button-menu:before {
   height: 10%;
   margin: auto;
   background: #e78f81;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(0deg);
 }
-
-/* line 182, ../sass/main.scss */
 a.button-menu:before {
   left: 15%;
   -webkit-transform: rotate(315deg);
   transform: rotate(0deg);
 }
 
-/* line 191, ../sass/main.scss */
+
+
+
 a.button-search {
   position: relative;
   z-index: 1;
@@ -270,13 +197,11 @@ a.button-search {
   border-radius: 100%;
   outline: none;
   background: white;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
   float: right;
   margin-right: 25px;
   margin-top: 25px;
 }
-
-/* line 205, ../sass/main.scss */
 a.button-search:after, a.button-search:before {
   content: "";
   position: absolute;
@@ -289,56 +214,52 @@ a.button-search:after, a.button-search:before {
   height: 10%;
   margin: auto;
   background: #e78f81;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.1) inset, 0 1px #fff;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(0deg);
 }
-
-/* line 221, ../sass/main.scss */
 a.button-search:before {
   left: 15%;
   -webkit-transform: rotate(315deg);
   transform: rotate(0deg);
 }
 
+
 /*about me*/
-/* line 230, ../sass/main.scss */
+
 .inner-left {
-  width: 44%;
-  margin: 0 auto;
+	width: 44%;
+	margin: 0 auto;
 }
 
-/* line 235, ../sass/main.scss */
 .inner-left p {
-  font-family: Arial;
-  font-style: italic;
-  margin-top: 20px;
-  padding-bottom: 230px;
+	font-family: Arial;
+	font-style: italic;
+	margin-top: 20px;
+	padding-bottom: 230px;
 }
 
-/* line 242, ../sass/main.scss */
 .inner-left h1 {
-  font-family: arial;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #526a75;
-  padding-top: 145px;
-  text-align: center;
+	font-family: arial;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #526a75;
+	padding-top: 145px;
+	text-align: center;
+}
+.inner-left img {
+	float: right;
+	margin-top: -80px;
+
 }
 
-/* line 250, ../sass/main.scss */
-.inner-left img {
-  float: right;
-  margin-top: -80px;
-}
 
 /*image gallery*/
-/* line 259, ../sass/main.scss */
+
 .gallery {
   width: 100%;
-}
 
-/* line 263, ../sass/main.scss */
+}
 .row {
   height: 495px;
   margin: 0 auto;
@@ -346,92 +267,77 @@ a.button-search:before {
   margin-bottom: 25px;
 }
 
-/* line 270, ../sass/main.scss */
 .row div {
   display: inline-block;
 }
 
-/* line 274, ../sass/main.scss */
 .row img {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
 }
-
-/* line 279, ../sass/main.scss */
 .item-1 {
   width: 345px;
   height: 235px;
   margin-right: 25px;
 }
 
-/* line 285, ../sass/main.scss */
 .class-1 {
   width: 345px;
   height: 235px;
   margin-bottom: 25px;
 }
-
-/* line 290, ../sass/main.scss */
 .class-2 {
   width: 345px;
   height: 235px;
 }
 
-/* line 295, ../sass/main.scss */
 .item-2 {
   width: 340px;
   height: 495px;
   margin-right: 25px;
 }
-
-/* line 300, ../sass/main.scss */
 .item-3 {
   width: 460px;
   height: 495px;
 }
 
-/* line 305, ../sass/main.scss */
 .row-1 {
   height: 355px;
   margin: 0 auto;
   text-align: center;
 }
-
-/* line 310, ../sass/main.scss */
 .row-1 div {
   display: inline-block;
 }
 
-/* line 314, ../sass/main.scss */
 .item-4 {
   width: 345px;
   height: 355px;
   margin-right: 25px;
 }
 
-/* line 320, ../sass/main.scss */
 .item-5 {
   width: 345px;
   height: 355px;
   margin-right: 24px;
 }
 
-/* line 326, ../sass/main.scss */
 .item-6 {
   width: 460px;
   height: 355px;
 }
 
+
+
 /*statistic section*/
-/* line 335, ../sass/main.scss */
+
 .bottom-row div, .top-row div {
   display: inline-block;
   /*outline: 1px solid black;*/
   width: 32%;
 }
 
-/* line 341, ../sass/main.scss */
 .top-row {
   margin-top: 100px;
   width: 90%;
@@ -439,15 +345,11 @@ a.button-search:before {
   padding-top: 100px;
   padding-bottom: 180px;
 }
-
-/* line 348, ../sass/main.scss */
 .bottom-row {
   margin: 0 auto;
   width: 90%;
   padding-bottom: 125px;
 }
-
-/* line 353, ../sass/main.scss */
 .statistics .text {
   font-family: arial;
   text-transform: uppercase;
@@ -457,7 +359,6 @@ a.button-search:before {
   letter-spacing: 3px;
 }
 
-/* line 362, ../sass/main.scss */
 .statistics .numb {
   font-size: 45px;
   color: #674a4a;
@@ -466,7 +367,6 @@ a.button-search:before {
   letter-spacing: 10px;
 }
 
-/* line 370, ../sass/main.scss */
 .statistics img {
   padding-bottom: 70px;
   display: block;
@@ -474,37 +374,33 @@ a.button-search:before {
   margin: 0 auto;
 }
 
+
 /*FOOTER*/
-/* line 381, ../sass/main.scss */
+
+
 .footer {
   width: 100%;
   height: 380px;
   background: url(../image/footer_giraffe.png) no-repeat;
   background-position: left;
 }
-
-/* line 387, ../sass/main.scss */
 .message-for-me {
   width: 50%;
   margin: 0 auto;
 }
-
-/* line 391, ../sass/main.scss */
 .message-for-me hr {
   width: 220px;
   display: block;
   margin: 0 auto;
+
 }
 
-/* line 398, ../sass/main.scss */
 .message-for-me .letter {
   display: block;
   text-align: center;
   margin: 0 auto;
   padding-right: 300px;
 }
-
-/* line 404, ../sass/main.scss */
 .message-for-me p {
   text-transform: uppercase;
   font-family: arial;
@@ -513,27 +409,21 @@ a.button-search:before {
   font-size: 12px;
   margin-bottom: -15px;
 }
-
-/* line 412, ../sass/main.scss */
 .footer-nav {
   width: 50%;
   margin: 0 auto;
   padding-top: 90px;
-  /*outline: 1px solid black;*/
+   /*outline: 1px solid black;*/
 }
-
-/* line 418, ../sass/main.scss */
 .footer-navigation {
-  text-align: center;
+    text-align: center;
 }
-
-/* line 421, ../sass/main.scss */
-.footer-navigation li {
+.footer-navigation li{
   display: inline-block;
+
   margin-right: 50px;
 }
 
-/* line 427, ../sass/main.scss */
 .footer-navigation a {
   text-decoration: none;
   text-transform: uppercase;
@@ -541,36 +431,32 @@ a.button-search:before {
   font-family: arial;
   letter-spacing: 4px;
   font-size: 19px;
+
 }
 
-/* line 437, ../sass/main.scss */
 .footer-navigation li .active {
-  display: block;
-  padding: 5px 10px;
-  background: #e37a6a;
-  color: white;
-  text-decoration: none;
-  position: relative;
+   display: block; 
+   padding: 5px 10px; 
+   background: #e37a6a; 
+   color: white; 
+   text-decoration: none; 
+   position: relative; 
 }
 
-/* line 446, ../sass/main.scss */
 .footer-navigation li a:hover {
-  display: block;
-  padding: 5px 10px;
-  background: #e37a6a;
-  color: white;
-  text-decoration: none;
-  position: relative;
+  display: block; 
+   padding: 5px 10px; 
+   background: #e37a6a; 
+   color: white; 
+   text-decoration: none; 
+   position: relative;
 }
 
-/* line 455, ../sass/main.scss */
 .social-net {
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
-
-/* line 460, ../sass/main.scss */
 .social-net img {
   display: inline-block;
   margin: 0 auto;
@@ -578,12 +464,10 @@ a.button-search:before {
   padding-top: 65px;
 }
 
-/* line 467, ../sass/main.scss */
 .social-net a:last-child {
-  margin-right: 60px;
+    margin-right: 60px;
 }
 
-/* line 471, ../sass/main.scss */
 .to-top {
   color: #e37a6a;
   font-size: 20px;
@@ -591,29 +475,35 @@ a.button-search:before {
   padding-right: 15px;
 }
 
+
+
+
+
+
+@media only screen and (min-width: 1382px) {
+  
+
+ 
+}
+
 @media only screen and (max-width: 992px) {
-  /* line 490, ../sass/main.scss */
   .logo-1 {
     padding-top: 22%;
     width: 100%;
-    text-align: center;
+    text-align: center
   }
 
-  /* line 496, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 55px;
     letter-spacing: 8px;
-    font-family: 'streamsterregular';
+    font-family:'streamsterregular';
     margin-left: -400px;
   }
 
-  /* line 504, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
-
-  /* line 507, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 50px;
@@ -621,36 +511,26 @@ a.button-search:before {
     letter-spacing: 15px;
     font-family: arial;
   }
-
-  /* line 514, ../sass/main.scss */
   .button-arrow {
     width: 100%;
     text-align: center;
     padding-top: 200px;
   }
-
-  /* line 519, ../sass/main.scss */
   .button-arrow {
     width: 100%;
     text-align: center;
     padding-top: 100px;
-  }
-
-  /* line 524, ../sass/main.scss */
+  }  
   a.button-down {
     width: 30px;
     height: 30px;
   }
-
-  /* line 528, ../sass/main.scss */
   a.button-menu {
     width: 30px;
     height: 30px;
     margin-left: 25px;
     margin-top: 25px;
   }
-
-  /* line 534, ../sass/main.scss */
   a.button-search {
     width: 30px;
     height: 30px;
@@ -658,29 +538,27 @@ a.button-search:before {
     margin-top: 25px;
   }
 }
+
+
+
 @media only screen and (max-width: 768px) {
-  /* line 545, ../sass/main.scss */
-  .logo-1 {
+   .logo-1 {
     padding-top: 22%;
     width: 100%;
-    text-align: center;
+    text-align: center
   }
 
-  /* line 551, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 35px;
     letter-spacing: 6px;
-    font-family: 'streamsterregular';
+    font-family:'streamsterregular';
     margin-left: -265px;
   }
 
-  /* line 559, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
-
-  /* line 562, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 35px;
@@ -688,35 +566,25 @@ a.button-search:before {
     letter-spacing: 10px;
     font-family: arial;
   }
-
-  /* line 569, ../sass/main.scss */
   .train img {
     height: auto;
     display: none;
   }
-
-  /* line 573, ../sass/main.scss */
   .button-arrow {
     width: 100%;
     text-align: center;
     padding-top: 75px;
-  }
-
-  /* line 578, ../sass/main.scss */
-  a.button-down {
+  } 
+   a.button-down {
     width: 25px;
     height: 25px;
   }
-
-  /* line 582, ../sass/main.scss */
   a.button-menu {
     width: 25px;
     height: 25px;
     margin-left: 15px;
     margin-top: 15px;
   }
-
-  /* line 588, ../sass/main.scss */
   a.button-search {
     width: 25px;
     height: 25px;
@@ -724,29 +592,26 @@ a.button-search:before {
     margin-top: 15px;
   }
 }
+
+
 @media only screen and (max-width: 480px) {
-  /* line 598, ../sass/main.scss */
-  .logo-1 {
+    .logo-1 {
     padding-top: 22%;
     width: 100%;
-    text-align: center;
+    text-align: center
   }
 
-  /* line 604, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 35px;
     letter-spacing: 4px;
-    font-family: 'streamsterregular';
+    font-family:'streamsterregular';
     margin-left: -200px;
   }
 
-  /* line 612, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
-
-  /* line 615, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 30px;
@@ -754,42 +619,32 @@ a.button-search:before {
     letter-spacing: 5px;
     font-family: arial;
   }
-
-  /* line 623, ../sass/main.scss */
+  
   .train {
     width: 65%;
     height: 60px;
-    margin: 0 auto;
+    margin: 0 auto;  
   }
-
-  /* line 628, ../sass/main.scss */
   .train img {
     height: auto;
     display: none;
   }
-
-  /* line 632, ../sass/main.scss */
   .button-arrow {
     width: 100%;
     text-align: center;
     padding-top: 25px;
   }
-
-  /* line 637, ../sass/main.scss */
   a.button-down {
     width: 20px;
     height: 20px;
   }
-
-  /* line 642, ../sass/main.scss */
+  
   a.button-menu {
     width: 20px;
     height: 20px;
     margin-left: 10px;
     margin-top: 10px;
   }
-
-  /* line 648, ../sass/main.scss */
   a.button-search {
     width: 20px;
     height: 20px;
@@ -797,16 +652,25 @@ a.button-search:before {
     margin-top: 10px;
   }
 }
+
+
+
+
+
+
+
+
+
+
 /*scss*/
-/* line 667, ../sass/main.scss */
+
 * {
   font-family: 'helvetica nue', sans-serif;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   /* For some Androids */
 }
 
-/* line 674, ../sass/main.scss */
 .top-animate {
   background: #fff !important;
   top: 13px !important;
@@ -814,12 +678,10 @@ a.button-search:before {
   transform: rotate(45deg);
 }
 
-/* line 681, ../sass/main.scss */
 .mid-animate {
   opacity: 0;
 }
 
-/* line 685, ../sass/main.scss */
 .bottom-animate {
   background: #fff !important;
   top: 13px !important;
@@ -827,7 +689,6 @@ a.button-search:before {
   transform: rotate(-225deg);
 }
 
-/* line 692, ../sass/main.scss */
 .top-menu {
   top: 5px;
   width: 25px;
@@ -836,7 +697,6 @@ a.button-search:before {
   background-color: #F9A530;
 }
 
-/* line 700, ../sass/main.scss */
 .mid-menu {
   top: 13px;
   width: 25px;
@@ -845,7 +705,6 @@ a.button-search:before {
   background-color: #F9A530;
 }
 
-/* line 708, ../sass/main.scss */
 .bottom-menu {
   top: 21px;
   width: 25px;
@@ -854,16 +713,14 @@ a.button-search:before {
   background-color: #F9A530;
 }
 
-/* line 716, ../sass/main.scss */
 .menui {
   background: orange;
   transition: 0.6s ease;
-  transition-timing-function: cubic-bezier(0.75, 0, 0.29, 1.01);
+  transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
   margin-top: 10px;
   position: absolute;
 }
 
-/* line 724, ../sass/main.scss */
 .icon {
   z-index: 999;
   position: absolute;
@@ -876,7 +733,6 @@ a.button-search:before {
   left: 0;
 }
 
-/* line 736, ../sass/main.scss */
 .mobilenav {
   font-family: inherit;
   top: 0;
@@ -888,14 +744,12 @@ a.button-search:before {
   background: orange;
 }
 
-/* line 747, ../sass/main.scss */
 .mobilenav li {
   list-style-type: none;
   text-align: center;
   padding: 10px;
 }
 
-/* line 753, ../sass/main.scss */
 .mobilenav li a {
   font-size: 150%;
   color: #fff;
@@ -904,7 +758,6 @@ a.button-search:before {
   width: 100%;
 }
 
-/* line 761, ../sass/main.scss */
 .mobilenav li:first-child {
   margin-top: 60px;
 }
