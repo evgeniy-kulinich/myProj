@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -285,6 +286,7 @@ label:before {
   margin-top: -80px;
 }
 
+/*GALLERY*/
 /* line 205, ../sass/main.scss */
 .gallery {
   width: 100%;
@@ -308,81 +310,83 @@ label:before {
   display: inline-block;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 
-/* line 225, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .item-1 {
   width: 345px;
   height: 235px;
   margin-right: 25px;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .class-1 {
   width: 345px;
   height: 235px;
   margin-bottom: 25px;
 }
 
-/* line 236, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 .class-2 {
   width: 345px;
   height: 235px;
 }
 
-/* line 241, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .item-2 {
   width: 340px;
   height: 495px;
   margin-right: 25px;
 }
 
-/* line 246, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .item-3 {
   width: 460px;
   height: 495px;
 }
 
-/* line 251, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 .row-1 {
   height: 355px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 256, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .row-1 div {
   display: inline-block;
 }
 
-/* line 260, ../sass/main.scss */
+/* line 262, ../sass/main.scss */
 .item-4 {
   width: 345px;
   height: 355px;
   margin-right: 25px;
 }
 
-/* line 266, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .item-5 {
   width: 345px;
   height: 355px;
   margin-right: 24px;
 }
 
-/* line 272, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 .item-6 {
   width: 460px;
   height: 355px;
 }
 
-/* line 282, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 .bottom-row div, .top-row div {
   display: inline-block;
   /*outline: 1px solid black;*/
   width: 32%;
 }
 
-/* line 288, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .top-row {
   margin-top: 100px;
   width: 90%;
@@ -391,14 +395,14 @@ label:before {
   padding-bottom: 180px;
 }
 
-/* line 295, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .bottom-row {
   margin: 0 auto;
   width: 90%;
   padding-bottom: 125px;
 }
 
-/* line 300, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .statistics .text {
   font-family: arial;
   text-transform: uppercase;
@@ -408,7 +412,7 @@ label:before {
   letter-spacing: 3px;
 }
 
-/* line 309, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .statistics .numb {
   font-size: 45px;
   color: #674a4a;
@@ -417,7 +421,7 @@ label:before {
   letter-spacing: 10px;
 }
 
-/* line 317, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 .statistics img {
   padding-bottom: 70px;
   display: block;
@@ -426,7 +430,7 @@ label:before {
 }
 
 /*FOOTER*/
-/* line 328, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 .footer {
   width: 100%;
   height: 380px;
@@ -434,20 +438,20 @@ label:before {
   background-position: left;
 }
 
-/* line 334, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .message-for-me {
   width: 50%;
   margin: 0 auto;
 }
 
-/* line 338, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .message-for-me hr {
   width: 220px;
   display: block;
   margin: 0 auto;
 }
 
-/* line 345, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 .message-for-me .letter {
   display: block;
   text-align: center;
@@ -455,7 +459,7 @@ label:before {
   padding-right: 300px;
 }
 
-/* line 351, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 .message-for-me p {
   text-transform: uppercase;
   font-family: arial;
@@ -465,7 +469,7 @@ label:before {
   margin-bottom: -15px;
 }
 
-/* line 359, ../sass/main.scss */
+/* line 361, ../sass/main.scss */
 .footer-nav {
   width: 50%;
   margin: 0 auto;
@@ -473,18 +477,18 @@ label:before {
   /*outline: 1px solid black;*/
 }
 
-/* line 365, ../sass/main.scss */
+/* line 367, ../sass/main.scss */
 .footer-navigation {
   text-align: center;
 }
 
-/* line 368, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .footer-navigation li {
   display: inline-block;
   margin-right: 50px;
 }
 
-/* line 374, ../sass/main.scss */
+/* line 376, ../sass/main.scss */
 .footer-navigation a {
   text-decoration: none;
   text-transform: uppercase;
@@ -494,17 +498,7 @@ label:before {
   font-size: 19px;
 }
 
-/* line 384, ../sass/main.scss */
-.footer-navigation li .active {
-  display: block;
-  padding: 5px 10px;
-  background: #e37a6a;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
-
-/* line 393, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 .footer-navigation li a:hover {
   display: block;
   padding: 5px 10px;
@@ -514,14 +508,14 @@ label:before {
   position: relative;
 }
 
-/* line 403, ../sass/main.scss */
+/* line 396, ../sass/main.scss */
 .social-net {
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 408, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 .social-net img {
   display: inline-block;
   margin: 0 auto;
@@ -529,28 +523,37 @@ label:before {
   padding-top: 65px;
 }
 
-/* line 415, ../sass/main.scss */
+/* line 408, ../sass/main.scss */
 .social-net a:last-child {
   margin-right: 60px;
 }
 
-/* line 419, ../sass/main.scss */
+/* line 412, ../sass/main.scss */
 .to-top {
   color: #e37a6a;
   font-size: 20px;
   font-weight: 600;
   padding-right: 15px;
+  -moz-transform: rotate(180deg);
+  /* ╨Ф╨╗╤П Firefox */
+  -ms-transform: rotate(180deg);
+  /* ╨Ф╨╗╤П IE */
+  -webkit-transform: rotate(180deg);
+  /* ╨Ф╨╗╤П Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* ╨Ф╨╗╤П Opera */
+  transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 437, ../sass/main.scss */
+  /* line 435, ../sass/main.scss */
   .logo-1 {
     padding-top: 35%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 443, ../sass/main.scss */
+  /* line 441, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 55px;
@@ -559,12 +562,12 @@ label:before {
     margin-left: -400px;
   }
 
-  /* line 451, ../sass/main.scss */
+  /* line 449, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
 
-  /* line 454, ../sass/main.scss */
+  /* line 452, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 50px;
@@ -573,40 +576,135 @@ label:before {
     font-family: arial;
   }
 
-  /* line 461, ../sass/main.scss */
+  /* line 459, ../sass/main.scss */
   label:before {
     width: 30px;
   }
 
-  /* line 464, ../sass/main.scss */
+  /* line 462, ../sass/main.scss */
   .search {
     width: 30px;
   }
 
-  /* line 467, ../sass/main.scss */
+  /* line 465, ../sass/main.scss */
   .button-down {
     width: 30px;
   }
 
-  /* line 470, ../sass/main.scss */
+  /* line 468, ../sass/main.scss */
   .nav {
     padding-top: 110px;
   }
 
-  /* line 473, ../sass/main.scss */
+  /* line 471, ../sass/main.scss */
   .inner-left h1 {
     font-size: 35px;
   }
+
+  /*GALLERY*/
+  /* line 477, ../sass/main.scss */
+  .row {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 485, ../sass/main.scss */
+  .row div {
+    display: inline-block;
+  }
+
+  /* line 489, ../sass/main.scss */
+  .row img {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 496, ../sass/main.scss */
+  .item-1 {
+    width: 25%;
+    height: auto;
+    margin-right: 25px;
+  }
+
+  /* line 502, ../sass/main.scss */
+  .class-1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  /* line 507, ../sass/main.scss */
+  .class-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 512, ../sass/main.scss */
+  .item-2 {
+    width: 25%;
+    height: auto;
+    margin-right: 25px;
+  }
+
+  /* line 517, ../sass/main.scss */
+  .item-3 {
+    width: 34%;
+    height: auto;
+  }
+
+  /* line 522, ../sass/main.scss */
+  .row-1 {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* line 527, ../sass/main.scss */
+  .row-1 div {
+    display: inline-block;
+  }
+
+  /* line 530, ../sass/main.scss */
+  .row-1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 535, ../sass/main.scss */
+  .item-4 {
+    width: 25%;
+    height: auto;
+    margin-right: 25px;
+  }
+
+  /* line 541, ../sass/main.scss */
+  .item-5 {
+    width: 25%;
+    height: auto;
+    margin-right: 24px;
+  }
+
+  /* line 547, ../sass/main.scss */
+  .item-6 {
+    width: 34%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
-  /* line 482, ../sass/main.scss */
+  /* line 557, ../sass/main.scss */
   .logo-1 {
     padding-top: 22%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 488, ../sass/main.scss */
+  /* line 563, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 35px;
@@ -615,12 +713,12 @@ label:before {
     margin-left: -265px;
   }
 
-  /* line 496, ../sass/main.scss */
+  /* line 571, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
 
-  /* line 499, ../sass/main.scss */
+  /* line 574, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 35px;
@@ -629,62 +727,62 @@ label:before {
     font-family: arial;
   }
 
-  /* line 506, ../sass/main.scss */
+  /* line 581, ../sass/main.scss */
   .train {
     padding-bottom: 100px;
   }
 
-  /* line 509, ../sass/main.scss */
+  /* line 584, ../sass/main.scss */
   .train img {
     height: auto;
     display: none;
   }
 
-  /* line 513, ../sass/main.scss */
+  /* line 588, ../sass/main.scss */
   .search {
     width: 20px;
   }
 
-  /* line 516, ../sass/main.scss */
+  /* line 591, ../sass/main.scss */
   .button-down {
     width: 20px;
   }
 
-  /* line 519, ../sass/main.scss */
+  /* line 594, ../sass/main.scss */
   .btn-down {
     bottom: 15px;
   }
 
-  /* line 522, ../sass/main.scss */
+  /* line 597, ../sass/main.scss */
   .nav {
     padding-top: 50px;
   }
 
-  /* line 525, ../sass/main.scss */
+  /* line 600, ../sass/main.scss */
   .nav li {
     padding-bottom: 40px;
   }
 
-  /* line 528, ../sass/main.scss */
+  /* line 603, ../sass/main.scss */
   .inner-left h1 {
     font-size: 25px;
     padding-top: 100px;
   }
 
-  /* line 532, ../sass/main.scss */
+  /* line 607, ../sass/main.scss */
   .inner-left p {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 541, ../sass/main.scss */
+  /* line 616, ../sass/main.scss */
   .logo-1 {
     padding-top: 22%;
     width: 100%;
     text-align: center;
   }
 
-  /* line 547, ../sass/main.scss */
+  /* line 622, ../sass/main.scss */
   .logo-1 span {
     color: white;
     font-size: 35px;
@@ -693,12 +791,12 @@ label:before {
     margin-left: -200px;
   }
 
-  /* line 555, ../sass/main.scss */
+  /* line 630, ../sass/main.scss */
   .logo-2 {
     text-align: center;
   }
 
-  /* line 558, ../sass/main.scss */
+  /* line 633, ../sass/main.scss */
   .logo-2 span {
     color: white;
     font-size: 30px;
@@ -707,48 +805,48 @@ label:before {
     font-family: arial;
   }
 
-  /* line 566, ../sass/main.scss */
+  /* line 641, ../sass/main.scss */
   .train {
     padding-bottom: 30px;
   }
 
-  /* line 569, ../sass/main.scss */
+  /* line 644, ../sass/main.scss */
   .train img {
     height: auto;
     display: none;
   }
 
-  /* line 573, ../sass/main.scss */
+  /* line 648, ../sass/main.scss */
   .search {
     width: 15px;
   }
 
-  /* line 576, ../sass/main.scss */
+  /* line 651, ../sass/main.scss */
   .button-down {
     width: 15px;
   }
 
-  /* line 579, ../sass/main.scss */
+  /* line 654, ../sass/main.scss */
   .btn-down {
     bottom: 5px;
   }
 
-  /* line 582, ../sass/main.scss */
+  /* line 657, ../sass/main.scss */
   .nav li {
     padding-bottom: 15px;
   }
 
-  /* line 585, ../sass/main.scss */
+  /* line 660, ../sass/main.scss */
   .nav {
     padding-top: 40px;
   }
 
-  /* line 588, ../sass/main.scss */
+  /* line 663, ../sass/main.scss */
   .nav a {
     font-size: 14px;
   }
 
-  /* line 591, ../sass/main.scss */
+  /* line 666, ../sass/main.scss */
   .inner-left p {
     font-size: 12px;
     margin-top: 80px;
