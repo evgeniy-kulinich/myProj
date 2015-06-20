@@ -78,5 +78,14 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop:$(document).height()}, 'slow');
         return false;
     });
+        $('.menu-toggle').click(function() {
+    $('.toggle-slide').slideToggle('fast');
+    setTimeout(function () {
+        $('.banner').toggleClass('blur');
+    }, 140);
+    
+    })
  
 });
+
+
