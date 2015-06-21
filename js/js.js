@@ -85,7 +85,11 @@ $(document).ready(function() {
     }, 140);
     
     })
- 
+    $('.class-1,.class-2,.item-2,.item-3,.item-4,.item-6').mouseenter(function(e) {
+        $(this).children('span').fadeIn(200);
+        }).mouseleave(function(e) {
+        $(this).children('span').fadeOut(200);
+    });
 });
 
 
