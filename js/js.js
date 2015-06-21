@@ -82,7 +82,7 @@ $(document).ready(function() {
     $('.toggle-slide').slideToggle('fast');
     setTimeout(function () {
         $('.banner').toggleClass('blur');
-    }, 140);
+    }, 170);
     
     })
     $('.class-1,.class-2,.item-2,.item-3,.item-4,.item-6').mouseenter(function(e) {
